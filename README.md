@@ -13,6 +13,7 @@ The main entity representing a story idea with the following properties:
 - `Id` (Guid): Unique identifier
 - `Title` (string): The title of the idea
 - `Description` (string?): Optional detailed description
+- `Outline` (string?): Optional skeletal structure or core plot backbone of the story
 - `CreatedAt` (DateTime): Creation timestamp
 - `UpdatedAt` (DateTime?): Last update timestamp
 - `IdeaIdeaInspirations` (ICollection): Navigation property for the M:N relationship
@@ -42,6 +43,7 @@ var idea = new Idea
     Id = Guid.NewGuid(),
     Title = "Epic Fantasy Adventure",
     Description = "A story about heroes on a quest",
+    Outline = "Hero receives call to adventure -> Forms team -> Faces trials -> Confronts evil -> Returns transformed",
     CreatedAt = DateTime.UtcNow
 };
 
