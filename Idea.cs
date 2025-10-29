@@ -22,6 +22,12 @@ public class Idea
     public string? Description { get; set; }
 
     /// <summary>
+    /// Gets or sets the outline (skeletal structure) of the story.
+    /// This represents the core plot structure or backbone of the story idea.
+    /// </summary>
+    public string? Outline { get; set; }
+
+    /// <summary>
     /// Gets or sets the date and time when the Idea was created.
     /// </summary>
     public DateTime CreatedAt { get; set; }
